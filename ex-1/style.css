@@ -66,14 +66,14 @@ h3 {
   max-width: 1900px;
   min-width: 450px;
   width: 100vw;
-  height: 50vh;
+  height: 50vh;  
 }
 
 .row-1,
 .row-2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .job-item,
@@ -167,4 +167,25 @@ h3 {
   left: 0px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Start coding here */
+@media only screen and (max-width: 600px) {
+  .topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row-1,.row-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
